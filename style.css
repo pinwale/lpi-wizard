@@ -608,13 +608,22 @@ h3.question-text {
         margin: 0.8cm;
     }
 
+    html {
+        background: white !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
     body {
-        background: white;
+        background: white !important;
         color: black;
         /* Force block layout to override flex centering */
         display: block !important;
         margin: 0 !important;
         padding: 0 !important;
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
         /* Force font consistency */
         font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
         -webkit-print-color-adjust: exact;
