@@ -15,9 +15,17 @@
     padding: 0;
 }
 
+html {
+    background-color: var(--primary-color);
+    /* Fallback/Overscroll color */
+    height: 100%;
+}
+
 body {
     font-family: var(--font-family);
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-attachment: fixed;
+    /* Fix gradient for scroll */
     color: var(--text-color);
     min-height: 100vh;
     /* Fallback */
