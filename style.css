@@ -597,6 +597,10 @@ h3.question-text {
     font-size: 0.9rem;
 }
 
+#print-container {
+    display: none;
+}
+
 /* Print Styles */
 @media print {
     @page {
