@@ -318,7 +318,13 @@ function renderPrintView(results) {
         const score = answers[q.id] || 0;
         const item = document.createElement('div');
         item.className = 'print-question-item';
-        item.innerHTML = `<span class="print-question-text">${q.id}. ${q.text}</span>: <strong>${score}</strong>`;
+        item.innerHTML = `
+            <span class="print-q-content">
+                <span class="print-q-num">${q.id}.</span> 
+                <span class="print-q-text">${q.text}</span>
+            </span>
+            <span class="print-score">${score}</span>
+        `;
         ui.printQuestionsList.appendChild(item);
     });
 
